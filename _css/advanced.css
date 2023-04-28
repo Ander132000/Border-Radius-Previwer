@@ -1,0 +1,51 @@
+.advanced {
+    width: 90%;
+    max-width: 39rem;
+    text-align: left;
+    margin: 0.5em auto;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(white, 0.9);
+  
+    @media screen and (min-width: 560px) {
+      font-size: 1.25rem;
+    }
+}
+
+.input-group {
+    align-items: center;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    justify-content: space-between;
+    display: flex;
+}
+
+label {
+    display: block;
+    margin-right: 0.5em;
+  }
+input[type="number"] {
+    width: 4.5rem;
+  }
+
+  span {
+    display: inline-block;
+    width:200px;
+    height:200px ;
+    border-radius: 0.5;
+    background: rgba(blue, 0.8);
+    vertical-align: bottom;
+    position: relative;
+}
+
+.input_gruop input {
+      border-radius: 2px;
+      border: none;
+      background: white;
+      font-family: 'Ubuntu Mono', monospace;
+      color: black;
+      padding: 0.5em 0.625em;
+}

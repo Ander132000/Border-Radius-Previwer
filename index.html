@@ -5,15 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Border-Radius-Previwer</title>
-    <link rel="stylesheet" href="_css/index.css">
+    <link rel="stylesheet" href="_css/advanced.css">
+    <link rel="stylesheet" href="_css/generator">
 
-    
-
+   
 </head>
 <body>
+    <header class="header">
     <h1>Border Radius Previwer</h1>
-
+    
     <p>Escolha a <em>border radius<em> desejada</p>
-    <p id="rcorners">Escolha o arredondamento</p>
+    </header>
+    
+    <div class="generator" id="box">
+        <div class="generator_shape" id="shape"></div>
+        <span class="generator_shape" id="left"></span>
+        <span class="generator_shape" id="top"></span>
+        <span class="generator_shape" id="right"></span>
+        <span class="generator_shape" id="bottom"></span>
+    </div>
+    <div>
+        <div class="output">
+            <div class="output_label">border-radius: </div>
+            <div class="input-group">
+                <span type="text" class="output_code" id="code">
+                    30% 70% 70% 30% / 30% 30% 70% 70%
+                </span>
+                <button class="output_button" id="copy">copy</button>
+            </div>
+
+            <div class="advanced">
+                <div class="advanced_sswitch">
+                    <input type="checkbox" class="advanced_check" id="enable-advanced">
+                    <label class="advanced_trigger" for="enable-advanced">Custom size:
+                        <span></span>
+                    </label>
+                </div>
+                <div class="advanced_settings" id="dimension-input">
+                    <div class="input-group">
+                        <label for="width">Width:</label>
+                        <input type="number" id="width" min="5" max="2000" value="300"/>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="height">Height:</label>
+                        <input type="number" id="Height" min="5" max="2000" value="300"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 </body>
 </html>
